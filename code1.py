@@ -5,4 +5,4 @@ iris = load_iris()
 df = pd.DataFrame(iris['data'], columns=iris['feature_names'])
 df['target'] = iris['target']
 
-print(df)
+df.to_csv('iris.csv')
